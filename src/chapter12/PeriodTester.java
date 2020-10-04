@@ -4,8 +4,15 @@ import java.util.Date;
 
 public class PeriodTester {
 	public static void main(String[] args) {
-		Period p = new Period(new Date(), new Date());
-		System.out.println(p);
+		mutablePeriodTest();
 	}
 
+	static void mutablePeriodTest() {
+		MutablePeriod mp = new MutablePeriod();
+		Period p = mp.period;
+		Date pEnd = mp.end;
+
+		pEnd.setYear(78);
+		System.out.println(p);
+	}
 }
