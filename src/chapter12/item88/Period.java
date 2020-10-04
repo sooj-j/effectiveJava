@@ -1,4 +1,4 @@
-package chapter12;
+package chapter12.item88;
 
 import java.io.IOException;
 import java.io.InvalidObjectException;
